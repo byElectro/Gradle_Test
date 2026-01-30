@@ -49,7 +49,7 @@ public class Main {
             // Creamos entre 1 y 6 Pokemons random
             int numPokemons = faker.number().numberBetween(1, 6);
             for (int j = 0; j < numPokemons; j++) {
-                String nombrePokemon = faker.animal().name();
+                String nombrePokemon = faker.pokemon().name();
                 int vida = faker.number().numberBetween(50, 150);
                 int danyo = faker.number().numberBetween(10, 50);
                 String tipo = faker.options().option("Fuego", "Agua", "Planta", "Eléctrico", "Tierra");
